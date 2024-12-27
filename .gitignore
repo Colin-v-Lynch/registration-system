@@ -1,0 +1,58 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+__pycache__
+
+# Executables
+.venv
+*.out
+*.app
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files. 
+# These are the React front end git ignores
+# dependencies
+code/frontend/node_modules
+code/frontend.pnp
+.pnp.js
+
+# testing
+code/frontend/coverage
+
+# production
+code/frontend/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

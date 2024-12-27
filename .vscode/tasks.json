@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Project with SQLite3 and JSONCPP",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/code/backend/API_Endpoints.cpp",
+                "${workspaceFolder}/code/backend/DatabaseConnection.cpp",
+                "${workspaceFolder}/code/backend/Admin.cpp",
+                "${workspaceFolder}/code/backend/Course.cpp",
+                "${workspaceFolder}/code/backend/RegistrationFacade.cpp",
+                "${workspaceFolder}/code/backend/Student.cpp",
+                "${workspaceFolder}/code/backend/UserFactory.cpp",
+                "${workspaceFolder}/code/backend/SQL Database Source Code/sqlite3.c",
+                "-o",
+                "${workspaceFolder}/code/backend/API_Endpoints.exe",
+                "-I",
+                "${workspaceFolder}/code/backend/SQL Database Source Code",
+                "-lsqlite3",
+                "-ljsoncpp"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/code/backend"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds the project including SQLite3 and JSONCPP."
+        }
+    ]
+}
